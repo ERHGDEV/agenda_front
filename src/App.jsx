@@ -109,7 +109,7 @@ function App() {
         actionButton={addPerson}
       />
 
-      <h2>Números</h2>
+      <h2>Contactos</h2>
       <Phonebook arr={personsToShow} toggleImportanceOf={ toggleImportanceOf } handleClickDeletePerson= { handleClickDeletePerson } />
     </>
   )
