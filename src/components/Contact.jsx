@@ -3,7 +3,9 @@ const Contact = ({ name, phone, important, toggleImportance, handleClickDeletePe
 
     return (
         <li>
-            { name } <br></br> { phone } <br></br>
+            <span>
+                { name }    
+            </span> <br></br> { phone } <br></br>
             <button onClick={ toggleImportance } > { label } </button>
             <button 
                 style={{ color: 'red' }}
