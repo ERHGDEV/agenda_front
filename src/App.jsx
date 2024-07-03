@@ -50,6 +50,8 @@ function App() {
           .update( id, changedPerson )
           .then( returnedPerson => {
         setPersons( persons.map( person => person.id !== id ? person : returnedPerson ) )
+        setNewName('')
+        setNewPhone('')
       })
       }
     } 
