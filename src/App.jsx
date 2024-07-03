@@ -49,10 +49,10 @@ function App() {
         personService
           .update( id, changedPerson )
           .then( returnedPerson => {
-        setPersons( persons.map( person => person.id !== id ? person : returnedPerson ) )
-        setNewName('')
-        setNewPhone('')
-      })
+            setPersons( persons.map( person => person.id !== id ? person : returnedPerson ) )
+            setNewName('')
+            setNewPhone('')
+          })
       }
     } 
     else if (existPhone.length !== 0) {
